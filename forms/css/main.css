@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/* General */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+/* Nav */
+
+/* Main */
+
+/* Footer */
+
+/* Forms*/
+.form {
+    border: 1px solid #CCC;
+    padding: 25px 50px;
+}
+.form__label {
+    /* 
+    200: thin
+    300: light
+    400: normal
+    600: semibold
+    700: bold
+    800: extrabold
+    900: black
+    */
+    font-weight: 600;
+    margin-bottom: 2px;
+    display: block;
+}
+.form__element {
+    margin-bottom: 15px;
+}
+.form__input, 
+.form__textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+    font-size: 16px;
+    outline: none;
+}
+.form__input:focus,
+.form__textarea:focus {
+    border-color: #c8d3d4;;
+}
+.form__textarea {
+    height: 100px;
+}
+.form__button {
+    background-color: transparent;
+    padding: 10px 25px;
+    border: 1px solid #d4d4d4;
+    font-size: 16px;
+    cursor: pointer;
+    color: #2e3233;
+}
+.form__button:hover {
+    background-color: #c8d3d4;
+    color: #ffffff;
+    transition: all .3s;
+}
+.form__button--main {
+    background-color: #c8d3d4;
+    border-color: #c8d3d4;
+    color: #ffffff;
+}
+.form__button--main:hover {
+    background-color: #a6c6c9;
+}
+/* Helper */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios Web</title>
+    <!-- librerías, plugins, main.css -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-page">
+            <h1>Formularios</h1>
+        </header>
+
+        <main class="main-page">
+            <!--(section.section-page>h2{Sección $}+p>lorem50)*4-->
+            <section class="section-page">
+                <h2>Contacto</h2>
+
+                <!-- 
+                    Atributo "id": se sugiere utilizar formato "camelcase".
+                        camelcase:
+                            -uppercase: (Todas las palabras empiezan con mayúsculas). Ej. MiAtrbutoId.
+                            -lowecase: (La primer palabra en minúscula y a partir de la segunda en mayúscula). Ej. miAtributoId.
+                    
+                    Atributo "action": se tiene que especificar la ruta (path) del archivo que va a gestionar los datos del formulario. 
+                
+                    input: Elemento de entrada de datos.
+                        tipos (types):
+                            -text (Entrada de texto de una sola línea).
+                                -email.    
+                                -tel.
+                                -number.
+                                -url.
+                            -radio (Solo se selecciona un elemento.
+                            -checkbox (Casillas de verificación).
+                            -submit (Botón para enviar datos).
+                            -reset (Botón para limpiar formularios).
+                            -password (Campo cuando escribes se ven viñetas o asteriscos).
+                            -file (Para adjuntar archivos).
+                    
+                    -select: combo de múltiples opciones.
+                        -option: las opciones del elemento select.
+
+                    -textarea: Campo de texto multilínea.
+
+                -->
+                <form action="#" class="form" novalidate>
+                    <div class="form__element">
+                        <label for="formName" class="form__label">Nombre:</label>
+                        <input id="formName" class="form__input" type="text" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formTel" class="form__label">Teléfono:</label>
+                        <input id="formTel" class="form__input" type="tel" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formEmail" class="form__label">Correo eléctronico:</label>
+                        <input id="formEmail" class="form__input" type="email" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formUrl" class="form__label">Sitio web:</label>
+                        <input id="formUrl" class="form__input" type="url" />
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label">Sexo:</span>
+
+                        <input id="formFemale" type="radio">
+                        <label for="formFemale">Femenino</label>
+
+                        <input id="formMale" type="radio">
+                        <label for="formMale">Masculino</label>
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label">Pasatiempo:</span>
+
+                        <input id="formRead" type="checkbox">
+                        <label for="formRead">Leer</label>
+
+                        <input id="formSwim" type="checkbox">
+                        <label for="formSwim">Nadar</label>
+
+                        <input id="formRun" type="checkbox">
+                        <label for="formRun">Correr</label>
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formNationality" class="form__label">Nacionalidad:</label>
+                        <select id="formNationality" class="form__select">
+                            <option value="">- Selecciona tu nacionalidad -</option>
+                            <option>México</option>
+                            <option>Argentina</option>
+                            <option>Francia</option>
+                        </select>
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formMessage" class="form__label">Escribe tu opinión:</label>   
+                        <textarea id="formMessage" class="form__textarea"></textarea>                         
+                    </div>
+
+                    <div class="form__element">
+                            <input type="reset" value="Limpiar formulario" class="form__button" />
+                            <input type="submit" value="Enviar datos" class="form__button form__button--main" />
+                        </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer class="footer-page">
+            <p>Todos los derechos reservados | Alexandra Anaya Luna | eduMac 2017</p>
+        </footer>
+    </div>
+
+    <!-- Antes del final de body van js para que se cargue rápido -->
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
