@@ -19,18 +19,47 @@ img {
     max-width: 100%;
 }
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Header */
-
+.header-page {
+    background-color: #b1c5c7;
+    padding: 100px 0;
+}
+.header-page h1 {
+    margin: 0;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 /* Nav */
 
 /* Main */
-
+.main-page {
+    padding: 65px 0;
+}
+.main-page h2 {
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #b1c5c7;    
+}
+.main-page h2:first-child {
+    margin-top: 0;
+}
 /* Footer */
-
+.footer-page {
+    background-color: #c8d3d4;
+    padding: 25px 0;
+    text-align: center;
+}
+.footer-page p {
+    margin: 0;
+    color: #FFF;
+}
 /* Forms*/
 .form {
     border: 1px solid #CCC;
