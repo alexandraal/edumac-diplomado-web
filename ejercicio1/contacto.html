@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <!-- librerías, plugins, main.css -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-page">
+            <div class="container">
+                <h1>Gráficos</h1>
+            </div>
+        </header>
+
+        <nav id="navPage" class="nav-page">
+            <div class="container">
+                <!--ul>(li>a{item $})*4-->
+                <ul class="nav-page__menu">
+                    <li>
+                        <a href="index.html">Calendar</a>
+                        <ul class="nav-page__submenu">
+                            <li><a href="#">Enero</a></li>
+                            <li><a href="#">Febrero</a></li>
+                            <li><a href="#">Marzo</a></li>
+                            <li><a href="#">Abril</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="#">Gallery</a>
+                            <ul class="nav-page__submenu">
+                                <li><a href="#">Enero</a></li>
+                                <li><a href="#">Febrero</a></li>
+                                <li><a href="#">Marzo</a></li>
+                                <li><a href="#">Abril</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul class="nav-page__submenu">
+                                <li><a href="#">Enero</a></li>
+                                <li><a href="#">Febrero</a></li>
+                                <li><a href="#">Marzo</a></li>
+                                <li><a href="#">Abril</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contact</a>
+                            <ul class="nav-page__submenu">
+                                <li><a href="#">Enero</a></li>
+                                <li><a href="#">Febrero</a></li>
+                                <li><a href="#">Marzo</a></li>
+                                <li><a href="#">Abril</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+        <main class="main-page">
+            <!--(section.section-page>h2{Sección $}+p>lorem50)*4-->
+            <section class="section-page section-page-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col tb-col-6">
+                            <div class="section-page__contact-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.470187896442!2d-99.18979428472913!3d19.43528458688276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20211bddf054b%3A0x275a8f6a2bd54511!2seduMac+Polanco!5e0!3m2!1sen!2smx!4v1512860638096"
+                                    width="100%"
+                                    height="450"
+                                    frameborder="0"
+                                    style="border:0"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col tb-col-6">
+                            <ul class="section-page__contact-data">
+                                <li>
+                                    <span class="fa fa-map-marker" aria-hidden="true"></span> 
+                                    Dirección: Avenida Homero 408, Polanco.
+                                </li>
+                                <li>
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                    Teléfono: <a href="tel: 5516860149">55 1686 0149</a>
+                                </li>
+                                <li>
+                                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                                    Correo electrónico: <a href="mailto: aanayaluna@gmail.com">aanayaluna@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span class="fa fa-globe" aria-hidden="true"></span>
+                                    Sitio web: <a href="http://edumac.com.mx" target="_blank">edumac.com.mx</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer-page">
+            <div class="container">
+                <p>Todos los derechos reservados | Alexandra Anaya Luna | Edumac 2017</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Antes del final de body van js para que se cargue rápido -->
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
